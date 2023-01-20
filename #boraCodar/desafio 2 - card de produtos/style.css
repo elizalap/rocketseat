@@ -37,7 +37,7 @@ body * {
    align-items: center;
    gap: 63px;
 
-   padding: 60px 80px;
+   padding: 10rem 13rem;
    background-color: var(--card-bg-color);
    border-radius: 20px;
 }

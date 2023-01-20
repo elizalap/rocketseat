@@ -16,7 +16,7 @@ Projetos #boraCodar da Rocketseat
             <td>02</td>
             <td>Card de produto</td>
             <td>19/01/23</td>
-            <td><a href="#"> :link: </a></td>
+            <td><a href="https://github.com/elizalap/rocketseat/tree/main/%23boraCodar/desafio%202%20-%20card%20de%20produtos"> :link: </a></td>
          </tr>
       </tbody>
    </table>
