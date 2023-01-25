@@ -1,0 +1,14 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+   --body-bg-color: #c2abfa;
+   --card-bg-color: #D9CDF7;
+   --button-color: #00f94e82;
+   --text-color: #271A45;
+}
