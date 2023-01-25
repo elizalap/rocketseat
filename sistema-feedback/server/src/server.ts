@@ -23,6 +23,16 @@ const app = express();
 //middleware - verificar antes de processar a rota de cadastro de feedbacks
 app.use(express.json());
 
+//configuração do mailtrap
+const transport = nodemailer.createTransport({
+   host: "smtp.mailtrap.io",
+   port: 2525,
+   auth: {
+      user: "b84b0558599958",
+      pass: "cd912a1fa91cc0"
+   }
+});
+
 app.post('/feedbacks', async (req, res) => {
    const { type, comment, screenshot } = req.body;
 
@@ -33,6 +43,19 @@ app.post('/feedbacks', async (req, res) => {
          screenshot,
       }
    })
+
+   transport.sendMail({
+      from: 'Equipe Feedget <eliza.lima@feedget.com>',
+      to: 'Eliza Lima <eliza.lima@gmail.com>',
+      subject: 'Novo feedback',
+      html: [
+         `<div style="font-family: sans-serif; font-size: 16px; color: #222;">`,
+         `<p>Tipo de feedback: ${type}</p>`,
+         `<p>Comentário: ${comment}</p>`,
+         `</div>`
+      ].join('\n')
+   });
+
    return res.status(201).json({ data: feedback });
 })
 

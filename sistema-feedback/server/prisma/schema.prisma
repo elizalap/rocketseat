@@ -8,7 +8,6 @@ datasource db {
 }
 
 model Feedback {
-
   id String @id @default(uuid()) //Universal Unique ID
 
   type       String
