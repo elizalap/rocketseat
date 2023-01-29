@@ -44,7 +44,7 @@ app.post('/feedbacks', async (req, res) => {
       }
    })
 
-   transport.sendMail({
+   await transport.sendMail({
       from: 'Equipe Feedget <eliza.lima@feedget.com>',
       to: 'Eliza Lima <eliza.lima@gmail.com>',
       subject: 'Novo feedback',
