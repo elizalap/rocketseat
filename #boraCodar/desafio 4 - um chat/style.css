@@ -10,6 +10,7 @@
    --app-bg-color: #1A1924;
    --text-color: #E1E1E6;
    --status-online: #00B37E;
+   --light-purple: #282843;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -39,7 +40,7 @@ body {
 
 .app {
    background-color: var(--app-bg-color);
-   padding: 1rem 4rem;
+   padding: 2rem 4rem;
    border-radius: 5px;
 
    width: 80%;
@@ -77,9 +78,17 @@ body {
 }
 
 .close-button i{
-   color: white;
+   color: var(--text-color);
    font-size: 20px;
+   padding: .5rem ;
    cursor: pointer;
+}
+
+.close-button i:hover{
+   color: var(--text-color);
+   font-size: 20px;
+   background: var(--light-purple);
+   border-radius: 50px;
 }
 
 .date-time {
@@ -129,7 +138,38 @@ body {
    color: #104056;
 }
 
+.send-message {
+   width: 100%;
+   margin-top: 20px;
+   padding: .5rem 1rem;
+
+   border-radius: 30px;
+   background-color: var(--light-purple);
+}
+
+.message-input {
+   display: flex;
+   justify-content: space-between;
+}
+
+.message-input input {
+   width: 95%;
+   padding: 10px;
+   border: none;
+   background: transparent;
+   color: var(--text-color);
+}
+
+.message-input input:focus {
+   outline: none;
+}
+
 .button-send i {
    font-size: 30px;
    color: var(--text-color);
+   cursor: pointer;
+}
+
+.button-send i:hover{
+   color: white;
 }
