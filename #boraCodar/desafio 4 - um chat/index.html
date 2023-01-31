@@ -9,7 +9,8 @@
    <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
    <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 
@@ -20,30 +21,42 @@
    </div>
 
    <div class="app">
-      <div class="header">
+      <div class="app-header">
          <div class="user-header">
-            <div class="user-profile-picture"><img src="" alt=""></div>
-            <div class="user-username">Cecilia Sassaki</div>
-            <div class="user-status">Online</div>
-            <div class="close-button">X</div>
-         </div>
-         <div class="date-time">
-            Hoje 20:00
+            <div class="user-profile-picture">
+               <img src="./assets/user-profile.png" alt="">
+            </div>
+            <div class="user-username">
+               <h4>Cecilia Sassaki</h4>
+               <p class="status"><i class="ph-circle-fill"></i> Online</p>
+            </div>
+            <div class="close-button"><i class="ph-x"></i></div>
          </div>
       </div>
 
-      <div class="chat-messages">
-         <div class="messages-received">
-            <div class="user-nickname">Cecilia</div>
-            <div class="user-message">
-               <div class="user-message-text"></div>
+      <div class="date-time">
+         <p>Hoje 20:00</p>
+      </div>
+
+      <div class="app-messages">
+         <div class="message-received">
+            <div class="user-nickname">
+               <p>Cecilia 11:30</p>
+            </div>
+            <div class="user-message-text">
+               <p>Tive uma ideia incrível para um projeto!</p>
             </div>
          </div>
 
-         <div class="chat-messages-sent">
-            <div class="user-nickname">Você</div>
+         <div class="message-sent">
+            <div class="user-nickname">
+               <p>Você - 11:32</p>
+            </div>
             <div class="user-message">
-               <div class="user-message-text"></div>
+               <div class="user-message-text">
+                  <p>Sério? Me conta mais.</p>
+                  <i class="ph-checks-fill"></i>
+               </div>
             </div>
          </div>
 
