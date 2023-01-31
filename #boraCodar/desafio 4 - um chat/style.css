@@ -7,17 +7,129 @@
 }
 
 :root{
-   --body-bg-color: #c2abfa;
-   --card-bg-color: #D9CDF7;
-   --button-color: #00f94e82;
-   --text-color: #271A45;
+   --app-bg-color: #1A1924;
+   --text-color: #E1E1E6;
+   --status-online: #00B37E;
+}
+
+h1, h2, h3, h4, h5, p {
+   color: var(--text-color);
+   font-family: 'Roboto';
+}
+
+p {
+   font-size: 13px;
+   font-weight: 400;
 }
 
 body {
-   background-color: #130F1E;
+   background-color: #111;
    height: 100vh;
+   padding: 1rem 2rem;
+
+   display: flex;
+   flex-direction: column;
 }
 
 .header {
+   color: var(--text-color);
+   text-align: center;
+   padding: 1rem 2rem;
+}
+
+.app {
+   background-color: var(--app-bg-color);
+   padding: 1rem 4rem;
+   border-radius: 5px;
+
+   width: 80%;
+   margin: 0 auto;
+}
+
+.user-header {
+   display: flex;
+   align-items: center;
+   padding: .5rem 0;
+}
+
+.user-profile-picture{
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.user-username {
+   flex-grow: 2;
+   align-content: center;
+   padding: 0 10px;
+}
+
+.user-username h4{
+   padding-bottom: 7px;
+   cursor: pointer;
+}
+
+.user-username p {
+   color: var(--status-online);
+}
+
+.status i {
+   font-size: 9px;
+}
+
+.close-button i{
    color: white;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.date-time {
+   text-align: center;
+   padding: .5rem 0;
+}
+
+.app-messages{
+   padding: 1rem 0;
+}
+
+.user-nickname {
+   padding-bottom: 10px;
+}
+
+.message-received{
+   width: 25%;
+   text-align: left;
+   padding: 1rem 0;
+}
+
+.message-received .user-message-text {
+   background-color: #633BBC;
+   padding: 14px;
+   border-radius: 0 8px 8px 8px;
+}
+
+.message-sent{
+   //width 55%;
+   margin-left: 82%;
+   text-align: right;
+   padding: 1rem 0;
+}
+
+.message-sent .user-message-text {
+   display: flex;
+   justify-content: space-between;
+   padding: 14px;
+
+   background-color: #07847E;
+   text-align: left;
+   border-radius: 8px 0 8px 8px;
+}
+
+.message-sent .user-message-text i{
+   font-size: 18px;
+   color: #104056;
+}
+
+.button-send i {
+   font-size: 30px;
+   color: var(--text-color);
 }
