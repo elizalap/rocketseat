@@ -166,7 +166,7 @@ body {
    color: white;
 }
 
-@media (min-width: 800px){
+@media (max-width: 800px){
 
    body {
       background-color: #111;
@@ -178,11 +178,23 @@ body {
    
    .app {
       background-color: var(--app-bg-color);
-      //padding: 2rem 4rem;
+      padding: 2rem 1rem;
       border-radius: 5px;
    
-      width: 80%;
-      margin: 0 auto;
+      width: 95%;
+      margin: auto;
+   }
+
+   p {
+      font-size: 15px;
+   }
+
+   .message-received {
+      width: 65% !important;
+   }
+
+   .message-sent {
+      margin-left: 56% !important; 
    }
    
 }
