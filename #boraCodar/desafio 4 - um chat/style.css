@@ -13,13 +13,13 @@
    --light-purple: #282843;
 }
 
-h1, h2, h3, h4, h5, p {
+h4, p {
    color: var(--text-color);
    font-family: 'Roboto';
 }
 
 p {
-   font-size: 13px;
+   font-size: 12px;
    font-weight: 400;
 }
 
@@ -30,12 +30,6 @@ body {
 
    display: flex;
    flex-direction: column;
-}
-
-.header {
-   color: var(--text-color);
-   text-align: center;
-   padding: 1rem 2rem;
 }
 
 .app {
@@ -105,9 +99,8 @@ body {
 }
 
 .message-received{
-   width: 25%;
    text-align: left;
-   padding: 1rem 0;
+   padding: ,5rem 0;
 }
 
 .message-received .user-message-text {
@@ -117,23 +110,22 @@ body {
 }
 
 .message-sent{
-   //width 55%;
-   margin-left: 82%;
    text-align: right;
-   padding: 1rem 0;
+   padding: .5rem 0;
 }
 
 .message-sent .user-message-text {
    display: flex;
    justify-content: space-between;
-   padding: 14px;
+   align-items: center;
+   padding: 11px;
 
    background-color: #07847E;
    text-align: left;
-   border-radius: 8px 0 8px 8px;
+   border-radius: 8px 8px 0 8px;
 }
 
-.message-sent .user-message-text i{
+.message-sent .user-message-text i {
    font-size: 18px;
    color: #104056;
 }
@@ -172,4 +164,25 @@ body {
 
 .button-send i:hover{
    color: white;
+}
+
+@media (min-width: 800px){
+
+   body {
+      background-color: #111;
+      height: 100vh;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+   }
+   
+   .app {
+      background-color: var(--app-bg-color);
+      //padding: 2rem 4rem;
+      border-radius: 5px;
+   
+      width: 80%;
+      margin: 0 auto;
+   }
+   
 }
