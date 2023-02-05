@@ -6,6 +6,7 @@
 p, button {
    color: #EBEBEB;
    font-family: 'Rubik';
+   font-size: 22px;
 }
 
 .app {
@@ -21,15 +22,30 @@ p, button {
 
 .calculadora {
    background: #2D2A37;
-   padding: 1.2rem 1rem;
-   border-radius: 20px;
+   padding: 1.5rem 1.3rem;
+   border-radius: 35px;
+
+   box-shadow: inset 0.3em 0.3em 0.9em #474259;
+}
+
+p#calculo {
+   padding: 1rem;
+   color: #6B6B6B;
+   text-align: right;
+   font-size: 20px;
 }
 
 p#resultado {
-   padding: 1rem;
+   padding-right: 1rem;
+   padding-bottom: 1rem;
+   font-size: 36px;
    text-align: right;
 }
 
+tbody {
+   display: grid;
+   gap: 10px;
+}
 
 button {
    width: 50px;
@@ -39,7 +55,31 @@ button {
    background: transparent;
    border: none;
    border-radius: 50%;
-   box-shadow: 1px 1px 5px black;   
+   box-shadow: 1px 1px 5px #120f1b;   
 
    cursor: pointer;
+}
+
+button:hover {
+   background: #1d121252;
+}
+
+tr td button{
+   margin-right: 5px;
+}
+
+button.purple-btn {
+   background: #462878;
+}
+
+button#result {
+   background: #7F45E2;
+}
+
+button.purple-btn:hover{
+   background: #3a2263;
+}
+
+button#result:hover {
+   background: #6d36cb;
 }
