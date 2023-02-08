@@ -3,59 +3,68 @@
    padding: 0;
 }
 
-p, button {
+p, button, #current-operation {
    color: #EBEBEB;
    font-family: 'Rubik';
-   font-size: 22px;
+   font-size: 26px;
 }
 
-.app {
+body {
    height: 100vh;
    background-image: linear-gradient(0deg, #8e7ece, #867ece, #807ece );
-}
-
-.wrapper {
-   height: 100%;
    display: grid;
    place-content: center;
 }
 
-.calculadora {
+#calc{
    background: #2D2A37;
-   padding: 1.5rem 1.3rem;
-   border-radius: 35px;
-
+   padding: 2.3rem 2rem;
+   border-radius: 50px;
    box-shadow: inset 0.3em 0.3em 0.9em #474259;
 }
 
-p#calculo {
+#operations div#previous-operation {
    padding: 1rem;
    color: #6B6B6B;
    text-align: right;
    font-size: 20px;
 }
 
-p#resultado {
+.calculation {
+   display: flex;
+   padding: 1rem;
+}
+
+.calculation #equal {
+   align-self: center;
+}
+
+.calculation #current-operation{
+   flex: 2;
+}
+
+#operations div#current-operation {
    padding-right: 1rem;
    padding-bottom: 1rem;
    font-size: 36px;
    text-align: right;
 }
 
-tbody {
+#buttons-container{
    display: grid;
-   gap: 10px;
+   gap: 1rem;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 button {
-   width: 50px;
-   height: 50px;
-   padding: 8px;
-
-   background: transparent;
+   width: 65px;
+   height: 65px;
+   
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;;
    border: none;
    border-radius: 50%;
-   box-shadow: 1px 1px 5px #120f1b;   
+   //box-shadow: 1px 1px 5px #120f1b;  
+   box-shadow: 0px 11px 7px rgb(0 0 0 / 1%), 0px 7px 7px rgb(0 0 0 / 4%), 0px 4px 6px rgb(0 0 0 / 10%), 0px 2px 4px rgb(0 0 0 / 26%), 0px 0px 2px rgb(0 0 0 / 29%), inset 0px 2px 3px rgb(255 255 255 / 6%); 
 
    cursor: pointer;
 }
@@ -72,7 +81,7 @@ button.purple-btn {
    background: #462878;
 }
 
-button#result {
+button#equal-btn {
    background: #7F45E2;
 }
 
@@ -80,6 +89,6 @@ button.purple-btn:hover{
    background: #3a2263;
 }
 
-button#result:hover {
+button#equal-btn:hover {
    background: #6d36cb;
 }
