@@ -5,12 +5,9 @@
 
 body {
    height: 100vh;
-   background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
-}
-
-.wrapper {
-   display: grid;
+   display:grid;
    place-content: center;
+   background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
 }
 
 .wrapper > h3, 
@@ -23,14 +20,24 @@ h3, h4, p {
    color: white;
 }
 
+h2 {
+   font-family: 'Rubik';
+   font-size: 40px;
+}
+
 h3 {
    font-size: 20px;
    font-weight: 500;
+   padding: 20px 0;
 }
 
 p {
-   font-size: 14px;
+   font-family: 'Rubik';
+   font-style: normal;
    font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   color: rgba(0, 0, 0, 0.64);
 }
 
 .card {
@@ -40,22 +47,13 @@ p {
 }
 
 .card h4 {
-
    font-weight: bold;
    font-size: 16px;
    color: rgba(0, 0, 0, 0.88);
 }
 
-.card p {
-   font-family: 'Rubik';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 17px;
-   color: rgba(0, 0, 0, 0.64);
-}
-
-.flight {
+/* === FLIGHT ===*/
+.flight-details {
    display: flex;
    justify-content: space-between;
 }
@@ -66,4 +64,26 @@ p {
 
 .date p {
    text-align: right;
+}
+
+.flight {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 24px 0;
+}
+
+.flight .to {
+ text-align: right
+}
+
+
+/* === FIM FLIGHT ===*/
+
+
+.wrapper .footer p{
+   padding: 20px 60px;
+   color: white;
+   font-size: 14px;
+   line-height: 24px;
 }
