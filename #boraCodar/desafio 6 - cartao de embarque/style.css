@@ -1,0 +1,69 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   height: 100vh;
+   background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+}
+
+.wrapper {
+   display: grid;
+   place-content: center;
+}
+
+.wrapper > h3, 
+.wrapper > p {
+   text-align: center;
+}
+
+h3, h4, p {
+   font-family: 'Rubik';
+   color: white;
+}
+
+h3 {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+p {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.card {
+   background: white;
+   padding: 24px 32px;
+   border-radius: 24px;
+}
+
+.card h4 {
+
+   font-weight: bold;
+   font-size: 16px;
+   color: rgba(0, 0, 0, 0.88);
+}
+
+.card p {
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   color: rgba(0, 0, 0, 0.64);
+}
+
+.flight {
+   display: flex;
+   justify-content: space-between;
+}
+
+.code p {
+   text-align: left;
+}
+
+.date p {
+   text-align: right;
+}
