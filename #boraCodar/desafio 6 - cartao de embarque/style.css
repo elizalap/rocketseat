@@ -1,13 +1,28 @@
 * {
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
 }
 
 body {
+   font-size: 1.6rem;
    height: 100vh;
    display:grid;
    place-content: center;
    background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+}
+
+.flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.text-right {
+   text-align: right;
 }
 
 .wrapper > h3, 
@@ -42,7 +57,7 @@ p {
 
 .card {
    background: white;
-   padding: 24px 32px;
+   padding: 4.2rem 2.5rem;
    border-radius: 24px;
 }
 
@@ -52,34 +67,45 @@ p {
    color: rgba(0, 0, 0, 0.88);
 }
 
-/* === FLIGHT ===*/
-.flight-details {
-   display: flex;
-   justify-content: space-between;
-}
-
-.code p {
-   text-align: left;
-}
-
-.date p {
-   text-align: right;
+.flight-info {
+   padding-bottom: 2rem;
 }
 
 .flight {
-   display: flex;
-   justify-content: space-between;
    align-items: center;
-   padding: 24px 0;
+   padding-top: 20px;
+}
+ 
+.passanger-info {
+   padding: 2.3rem 0;
+   border: 1px dashed #bebdbd;;
+   border-right: none;
+   border-left: none;
 }
 
-.flight .to {
- text-align: right
+.qrcode img {
+   padding-bottom: 1rem;
+   text-align: center;
 }
 
+.boarding-info {
+   padding-top: 2.3rem;
+   padding-bottom: 4rem;
+}
 
-/* === FIM FLIGHT ===*/
+.boarding-details {
+   display: grid;
+}
 
+dl {
+   display: grid;
+   gap: 1.6rem;
+   align-content: center;
+}
+
+.warning {
+   text-align: center;
+}
 
 .wrapper .footer p{
    padding: 20px 60px;
