@@ -1,34 +1,78 @@
-# Bora Codar
+# #boraCodar
 
 Projetos #boraCodar da Rocketseat
 
 <table>
-      <thead>
-         <tr>
-            <th>#</th>
-            <th>Nome</th>
-            <th>Data</th>
-            <th>Abrir</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
+    <thead>
+        <tr>
+            <th align="center">
+                <img width="20" height="1"> 
+                <p>
+                    <small>#</small>
+                </p>
+            </th>
+            <th align="center">
+                <img width="300" height="1"> 
+                <p> 
+                    <small>
+                        NOME
+                    </small>
+                </p>
+            </th>
+            <th align="left">
+                <img width="140" height="1">
+                <p align="left"> 
+                    <small>
+                    DATA
+                    </small>
+                </p>
+            </th>
+            <th align="center">
+                <img width="201" height="1">
+                <p align="center"> 
+                    <small>
+                    PREVIEW
+                    </small>
+                </p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
             <td>02</td>
-            <td>Card de produto</td>
-            <td>19/01/23</td>
-            <td><a href="https://github.com/elizalap/rocketseat/tree/main/%23boraCodar/desafio%202%20-%20card%20de%20produtos"> :link: </a></td>
-         </tr>
-         <tr>
+            <td><a href="02">Card de produto</a></td>
+            <td>18/01/23</td>
+            <td align="center"><a href="02"><img width="300px" src="02/.github/preview.png" /></a></td>
+        </tr>
+        <tr>
             <td>03</td>
-            <td>Botões e cursores</td>
-            <td>29/01/23</td>
-            <td><a href="https://github.com/elizalap/rocketseat/tree/main/%23boraCodar/desafio%203%20-%20botoes%20e%20cursores"> :link: </a></td>
-         </tr>
-         <tr>
+            <td><a href="03">Botões e Cursores</a></td>
+            <td>25/01/23</td>
+            <td align="center"><a href="03"><img width="300px" src="03/.github/preview.png" /></a></td>
+        </tr>
+        <tr>
             <td>04</td>
-            <td>Um chat </td>
-            <td>11/01/23</td>
-            <td><a href="https://github.com/elizalap/rocketseat/tree/main/%23boraCodar/desafio%204%20-%20um%20chat"> :link: </a></td>
-         </tr>
-      </tbody>
-   </table>
+            <td><a href="04">Chat</a></td>
+            <td>01/02/23</td>
+            <td align="center"><a href="04"><img width="300px" src="04/.github/preview.png" /></a></td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td><a href="05">Calculadora</a></td>
+            <td>08/02/23</td>
+            <td align="center"><a href="05"><img width="300px" src="05/.github/preview.png" /></a></td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td><a href="06">Cartão de embarque</a></td>
+            <td>15/02/23</td>
+            <td align="center" ><a href="06"><img width="300px" src="06/.github/preview.png" /></a></td>
+        </tr>
+        <tr>
+            <td>07</td>
+            <td><a href="07">Site para encontrar seu bloco no carnaval</a></td>
+            <td>22/02/23</td>
+            <td align="center" ><a href="07"><img width="300px" src="07/.github/preview.png" /></a></td>
+        </tr>
+    </tbody>
+</table>
